@@ -1,5 +1,304 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 }
+.container{
+    width: 100%;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    position: absolute;
+    top: 50px;
+    left: 90px;
+}
+.logo a{
+    text-shadow: 4px 4px 40px rosybrown;
+    font-weight: bold;
+    color: darkmagenta;
+    font-size: 2rem;
+    letter-spacing: 1;
+}
+.seracharea{
+    position: fixed;
+    right: 90px;
+    top: 50px;
+    width: 170px;
+    height: 45px;
+    background-color: #eaeaf5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    box-shadow: 2px 2px 30px rgba(rgb(223, 215, 215));
+    box-sizing: border-box;
+    z-index: 1;
+    border: 1px solid rgb(225, 221, 214);
+}
+.serachbox input{
+    width: 90px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #1f1f11;
+    font-size: 1rem;
+    padding: 0px 10px;
+    font-family: cursive;
+}
+.serachbox input::placeholder{
+    color: #1d1d1d;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-family: poppins;
+}
+.section1 img{
+    position: absolute;
+    height:300px;
+    right: ;
+    top: 150px;
+    left: 150px;
+
+}
+.section1button{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-90%, -50%);
+}
+.section1button h1, h3{
+    font-family: cursive;
+    font-weight: bold;
+    margin: 0px;
+    line-height: 60px;
+    font-size: 4rem;
+    text-shadow: 2px 2px 10px rgb(138, 165, 166);
+    letter-spacing: 3px;
+    color: black;
+    text-transform: uppercase;
+}
+span{
+    color: #7a72ff;
+}
+.section1button h1{
+    letter-spacing: 18px;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    box-shadow: 2px 2px 30px rgb(210, 222, 222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10% /50% 50% 50% 50%;
+    margin-top: 50px;
+    color: #16f00e;
+    font-family:fantasy;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    border: transparent !important;  
+}
+.btn:hover{
+    background-color: #7a72ff;
+    transition: all ease 0.5s;
+    color: white;
+}
+.iconarea a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+}
+.iconarea i{
+    color: #1d1d1d;
+}
+.iconarea i:hover{
+    color:blue;
+    transition: all ease 0.5s;
+}
+.iconarea{
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    background-color: rgb(225, 208, 208);
+    padding: 5px 0px;
+    z-index: 1;
+}
+.psection{
+    width: 85%;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: -60px;
+    position: relative;
+    background-size: 1000px;
+    border-radius: 10px;
+}
+.psection h3{
+    margin: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0,0.5 );
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #323543;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    width: 100%;
+}
+.pbox{
+    width:250px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px 30px;
+}
+.pbox img{
+    height: 180px;
+}
+.baybtn{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50px;
+    bottom: -20px;
+    transform: translateX(-50%);
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+    background: linear-gradient(120deg, #534bb1 20%, #934098);
+    color:#f6ee08;
+    display: block;
+    animation: fade 0.2s;
+}
+.baybtn:hover{
+    display: flex;
+    background-color: #323543;
+}
+.pbox:hover{
+    box-shadow: 2px 2px 30px cadetblue;
+    background-color: #fffff;
+}
+.pbox:hover a:last-child{
+    color: #1ae8de;
+    transition: all ease 0.3s;
+}
+.about{
+    display: flex;
+    width: 85%;
+    margin: 50px auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 150px !important;
+}
+.aboutbox{
+    width: 40%;
+    font-family:'Courier New', Courier, monospace;
+}
+.aboutbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.aboutbox h1{
+    color: darkolivegreen;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0px;
+}
+.aboutbox h4{
+    color: #323543;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Notification{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(0,0,0,0.3  );
+}
+.Notification h1{
+    font-size: 2rem;
+}
+.Notificationinput{
+    width: 500px;
+    background-color: #ffff;
+    border-radius: 7% 7% 7% 7% / 50% 50% 50% 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 2px 5px 30px rgba(0,0,0,0.3  );
+    margin-top: 30px;
+}
+.Notificationinput input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.nbutton{
+    width: 120px;
+    height: 40px;
+    background-color: #7a72ff;
+    border-radius: 20px;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1 );
+    font-size: 1rem;
+}
+.nbutton:hover{
+    background-color: deeppink;
+    transition: all ease 0.5s;
+}
+footer{
+    background-color: black !important;
+    padding: 29px;
+}
+footer p{
+    text-align: center;
+    color: #fff;
+    font-weight: bold ;
+}
+
+
+    
+
